@@ -1,0 +1,60 @@
+# IMPORTANT: It is very important that you correctly complete this originality
+# statement.
+#
+# This is your statement of your submitted work being your own.
+# Incorrectly filling out this statement could lead to charges
+# of academic misconduct.
+# 
+# For information on how to fill this out correctly, see
+# https://cs.anu.edu.au/courses/comp1110/help/faq/09-originality/
+#
+
+# Remember: Never misrepresent someone else's work as your own.
+
+declaration: >-
+  I declare that this work upholds the principles of academic integrity,
+  as defined in the University Academic Misconduct Rule; is entirely my
+  own work, with only the exceptions listed below; is produced for the
+  purposes the purposes of this assessment task and has not been submitted
+  for assessment in any other context, except where authorised in writing
+  by the course convener; gives appropriate acknowledgement of the ideas,
+  scholarship and intellectual property of others insofar as these have been
+  used; in no part involves copying, cheating, collusion, fabrication,
+  plagiarism or recycling.
+
+# Use this to list names of people who you collaborated with, and a
+# comment about what you collaborated on.
+#
+# Add as many "name+comment" entries as necessary
+# (or remove it altogether if you haven't collaborated with anyone)
+collaboration:
+  - name:
+    comment: >-
+
+# Use this to list any code that you used that you did not write,
+# aside from code provided by the lecturer.  Provide a comment
+# explaining your use and the URL to that code and the licence for
+# that code
+#
+# Add as many "url+licence+comment" entries as necessary
+# (or remove it altogether if you haven't used any external code)
+code:
+  - comment:
+    url:
+    licence:
+
+# Use this to list any assets (artwork, sound, etc) that you used.
+# Provide a comment explaining your use of that asset and the URL
+# and license for the asset
+#
+# Add as many "url+licence+comment" entries as necessary
+# (or remove it altogether if you haven't used any external assets)
+assets:
+  - comment:
+    url:
+    licence:
+
+
+# sign *your* name and uid here
+name:
+uid:

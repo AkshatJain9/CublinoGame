@@ -1,0 +1,80 @@
+// inputs
+String[] inputs = new String[] {
+ "cf4",
+ "aa6",
+ "jc2",
+ "Fe6",
+ "Ja6",
+ "nc3",
+ "Rd2",
+ "Eb2",
+ "Na1",
+ "mc1",
+ "cb2",
+ "Be5",
+ "Nd6",
+ "Aa3",
+ "jb1",
+ "Fd3",
+ "ac2",
+ "Na2",
+ "If4",
+ "fd4",
+};
+
+// positions
+Position[] expectedPos = new Position[] {
+ new Position (5, 3),
+ new Position (0, 5),
+ new Position (2, 1),
+ new Position (4, 5),
+ new Position (0, 5),
+ new Position (2, 2),
+ new Position (3, 1),
+ new Position (1, 1),
+ new Position (0, 0),
+ new Position (2, 0),
+ new Position (1, 1),
+ new Position (4, 4),
+ new Position (3, 5),
+ new Position (0, 2),
+ new Position (1, 0),
+ new Position (3, 2),
+ new Position (2, 1),
+ new Position (0, 1),
+ new Position (5, 3),
+ new Position (3, 3),
+};
+
+// players
+Player[] expectedPlayer = new Player[] {
+ Player.PLAYER2,
+ Player.PLAYER2,
+ Player.PLAYER2,
+ Player.PLAYER1,
+ Player.PLAYER1,
+ Player.PLAYER2,
+ Player.PLAYER1,
+ Player.PLAYER1,
+ Player.PLAYER1,
+ Player.PLAYER2,
+ Player.PLAYER2,
+ Player.PLAYER1,
+ Player.PLAYER1,
+ Player.PLAYER1,
+ Player.PLAYER2,
+ Player.PLAYER1,
+ Player.PLAYER2,
+ Player.PLAYER1,
+ Player.PLAYER1,
+ Player.PLAYER2,
+};
+
+// top
+int[] expectedTop = new int[] {
+ 1, 1, 3, 2, 3, 4, 5, 2, 4, 4, 1, 1, 4, 1, 3, 2, 1, 4, 3, 2,};
+
+// front
+int[] expectedFront = new int[] {
+ 4, 2, 2, 3, 2, 2, 3, 1, 2, 1, 4, 3, 2, 2, 2, 3, 2, 2, 1, 3,};
+

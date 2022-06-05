@@ -1,0 +1,26 @@
+# IMPORTANT: It is very important that you correctly complete this contribution
+# statement.
+ 
+declaration: >-
+  We declare that the work toward our submission of Stage B was distributed among the group members as follows:
+
+# State your contributions as integers out of 100. The total contribution should
+# be 100 or 99 (33/33/33 is fine).  (Remove entries if you have fewer than three
+# members).  
+contributions:
+  - uid: u7279868
+    contribution: 30 
+  - uid: u7280302
+    contribution: 40
+  - uid: u7284072
+    contribution: 30
+
+# Sign *your* name and uids here. (Remove entries if you have fewer
+# than three members)
+signatures:
+  - name: Chris Kim
+    uid: u7279868
+  - name: Justin Tieu
+    uid: u7280302
+  - name: Akshat Jain
+    uid: u7284072

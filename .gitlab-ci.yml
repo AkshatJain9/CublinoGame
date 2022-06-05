@@ -1,0 +1,124 @@
+image: steveblackburn/comp1110-2021-s2-gitlab-ci:0.1.2
+
+stages:
+  - checksum
+  - compliance
+  - build
+  - test
+
+before_script:
+  - export PATH_TO_FX=/usr/share/openjfx/lib
+  - export JAVAFX_OPTIONS="--module-path $PATH_TO_FX --add-modules javafx.controls,javafx.fxml,javafx.media"
+  - export CP=src:/ass2/*:/shared/junit-platform-console-standalone-1.7.0.jar:$PATH_TO_FX/*
+  - export JUNIT="java $JAVAFX_OPTIONS -jar /shared/junit-platform-console-standalone-1.7.0.jar --class-path src:/ass2/comp1140-ass2.jar --disable-banner"
+
+
+checksum:
+  tags:
+    - comp1110
+  stage: checksum
+  script:
+    - python3 /validate.py --integrity comp1140-ass2
+
+compliance:
+  tags:
+    - comp1110
+  stage: compliance
+  script:
+    - python3 /validate.py --gitlablogin ${GITLAB_USER_LOGIN} --gitlabuser "${GITLAB_USER_NAME}" --gitlabprojectname "${CI_PROJECT_NAME}" --assignment /compliance-ass2.yml
+
+
+build:
+  tags:
+    - comp1110
+  stage: build
+  script:
+    - javac -encoding utf-8 $JAVAFX_OPTIONS -cp $CP $(find src -name "*.java")
+  artifacts:
+    paths:
+      - src/comp1140/ass2/*.class
+      - src/comp1140/ass2/*/*.class
+
+task3:
+  tags:
+    - comp1110
+  stage: test
+  script:
+    - $JUNIT -c=comp1140.ass2.isStateWellFormedTest
+  allow_failure: true
+
+task4:
+  tags:
+    - comp1110
+  stage: test
+  script:
+    - $JUNIT -c=comp1140.ass2.isStateValidTest
+  allow_failure: true
+
+task6:
+  tags:
+    - comp1110
+  stage: test
+  script:
+    - $JUNIT -c=comp1140.ass2.isGameOverPurTest
+  allow_failure: true
+
+task7:
+    tags:
+      - comp1110
+    stage: test
+    script:
+      - $JUNIT -c=comp1140.ass2.isValidStepPurTest
+    allow_failure: true
+
+task8:
+  tags:
+    - comp1110
+  stage: test
+  script:
+    - $JUNIT -c=comp1140.ass2.isValidMovePurTest
+  allow_failure: true
+
+task9:
+  tags:
+    - comp1110
+  stage: test
+  script:
+    - $JUNIT -c=comp1140.ass2.applyMovePurTest
+  allow_failure: true
+
+task11:
+  tags:
+    - comp1110
+  stage: test
+  script:
+    - $JUNIT -c=comp1140.ass2.generateMovePurTest
+  allow_failure: true
+
+task14a:
+  tags:
+    - comp1110
+  stage: test
+  script:
+    - $JUNIT -c=comp1140.ass2.isGameOverContraTest
+  allow_failure: true
+
+task14b:
+  tags:
+    - comp1110
+  stage: test
+  script:
+    - $JUNIT -c=comp1140.ass2.applyMoveContraTest
+  allow_failure: true
+
+task14c:
+  tags:
+    - comp1110
+  stage: test
+  script:
+    - $JUNIT -c=comp1140.ass2.generateMoveContraTest
+  allow_failure: true
+
+## Local Variables:
+## mode: yaml
+## End:

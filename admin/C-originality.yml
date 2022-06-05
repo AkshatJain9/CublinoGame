@@ -1,0 +1,45 @@
+# IMPORTANT: It is very important that you correctly complete this originality
+# statement.
+#
+# This is your statement of your submitted work being your own.
+# Incorrectly filling out this statement could lead to charges
+# of academic misconduct.
+# 
+# For information on how to fill this out correctly, see
+# https://cs.anu.edu.au/courses/comp1110/help/faq/09-originality/
+#
+
+# Remember: Never misrepresent someone else's work as your own.
+
+declaration: >-
+  We declare that the work presented in this stage AND all the work presented
+  before it upholds the principles of academic integrity, as defined in the
+  University Academic Misconduct Rule; is entirely our own work, with only
+  the exceptions listed below; is produced for the purposes the purposes of this
+  assessment task and has not been submitted for assessment in any other
+  context, except where authorised in writing by the course convener; gives
+  appropriate acknowledgement of the ideas, scholarship and intellectual
+  property of others insofar as these have been used; in no part involves
+  copying, cheating, collusion, fabrication, plagiarism or recycling.
+
+# Use this to list any assets (artwork, sound, etc) that you used.
+# Provide a comment explaining your use of that asset and the URL
+# and license for the asset
+#
+# Add as many "url+licence+comment" entries as necessary
+# (or remove it altogether if you haven't used any external assets)
+assets:
+  - comment: used for the dice textures, the dark textures were modified by us
+    url: https://opengameart.org/content/dice-1
+    licence: Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)
+
+
+# Sign *your* name and uids here. (Remove entries if you have fewer
+# than three members.)
+signatures:
+  - name: Akshat Jain
+    uid: u7284072
+  - name: Justin Tieu
+    uid: u7280302
+  - name: Chris Kim
+    uid: u7279868
