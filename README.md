@@ -3,17 +3,6 @@
 ## Collaborators
 This project was made by Akshat Jain, Justin Tieu and Chris Kim. The code was made collaboratively across many domains.
 
-## Purpose
-
-In this assignment you will work as a group to master a number of major themes of this course,
-including software design and implementation,
-using development tools such as Git and IntelliJ, and using JavaFX to build a user interface.
-As an extension task, you may also explore strategies for writing agents that play games.
-Above all, this assignment will emphasize group work; 
-while you will receive an individual mark for your work based on your contributions to the assignment,
-you can only succeed if all members contribute to your group's success.
-
-
 ## Game Rules
 Cublino is a two player game where each player controls seven dice. Players alternate turns moving their dice attempting to reach the opponent's end of the board. There are two variants of the rules: Cublino Contra and Cublino Pur. Each variant has slightly different rules and winning conditions. For the main task of the assignment you will be implementing the Cublino Pur variant, with an option to implement Cublino Contra as an additional task at the end of the assignment. All images used in this section are taken from [https://www.brettspiele-report.de/cublino/](https://www.brettspiele-report.de/cublino/).
 
